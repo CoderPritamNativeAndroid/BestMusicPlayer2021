@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fullback"
+    android:foregroundGravity="center"
+    app:layout_anchorGravity="center"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewSongName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="#19FFFFFF"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="TextView"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#FF9800"
+            android:textColorHint="#FF9800"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:alpha=".7"
+            android:background="#00FFFFFF"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/halfback" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="#00FFFFFF"
+            android:foregroundGravity="top|center"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="bottom|center"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewDurationStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|start"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:foregroundGravity="left|bottom|center"
+                    android:gravity="bottom|center|start"
+                    android:hint="TextView"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#FFEB3B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDurationEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:foregroundGravity="bottom|center|right"
+                    android:gravity="bottom|center|end"
+                    android:hint="TextView"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#FFEB3B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:layout_weight="2"
+                android:background="#19FFFFFF"
+                android:foregroundGravity="top|center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="#00FFFFFF"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewPrev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/prev1" />
+
+            <ImageView
+                android:id="@+id/imageViewPlayPause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/pausered" />
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/next1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
